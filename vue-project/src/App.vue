@@ -15,9 +15,10 @@ export default {
 <template>
   <div id="app">
     <nav>
+      <router-link to="/about">O blogu</router-link>
       <router-link to="/">Články</router-link>
       <router-link to="/gallery">Galéria hier</router-link>
-      <router-link to="/about">O blogu</router-link>
+      <router-link to="/games">TOP Hry</router-link>
     </nav>
     <router-view />
     <footer>

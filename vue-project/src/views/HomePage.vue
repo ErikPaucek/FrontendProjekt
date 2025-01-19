@@ -35,7 +35,6 @@ export default {
   </div>
 </template>
 
-
 <style scoped>
 .home-page {
   background: linear-gradient(#000000, #434343);
@@ -55,8 +54,6 @@ export default {
   column-gap: 10rem;
   width: calc(100% - 4rem);
   max-width: 1000px;
-
-
 }
 
 </style>

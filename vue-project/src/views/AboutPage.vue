@@ -1,3 +1,11 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'AboutPage',
+});
+</script>
+
 <template>
   <div class="about-page">
     <h1>O blogu</h1>
@@ -5,8 +13,8 @@
     <p>Blog bol vytvorený ako školský projekt so zameraním na moderné webové technológie ako Vue.js 3 a Pinia. Naším cieľom je poskytnúť návštevníkom hodnotný obsah, ktorý ich bude baviť čítať a inšpirovať k novým objavom v hernom svete.</p>
 
     <div class="about-image">
-      <img src="/images/legion.webp" />
-      <img src="/images/nintendo.jpg" />
+      <img src="/images/legion.webp" alt=""/>
+      <img src="/images/nintendo.jpg" alt=""/>
     </div>
     <br>
     <h2>Technológie použité na vývoj:</h2>
@@ -17,8 +25,8 @@
     </ul>
 
     <div class="about-image">
-      <img src="/images/konzola.jpg" />
-      <img src="/images/pcherny.png" />
+      <img src="/images/konzola.jpg" alt=""/>
+      <img src="/images/pcherny.png" alt=""/>
     </div>
   </div>
 </template>
@@ -30,7 +38,6 @@
 }
 
 .about-page h1, .about-page h2 {
-  color: #333;
   margin-top: 1rem;
   color: white;
 }

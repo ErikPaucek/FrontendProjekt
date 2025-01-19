@@ -54,7 +54,7 @@ export const useArticlesStore = defineStore('articlesStore', {
     ],
   }),
   actions: {
-    getArticleById(id) {
+    getArticleById(id:any) {
       return this.articles.find((article) => article.id === id);
     },
   },

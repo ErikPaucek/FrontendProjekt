@@ -21,7 +21,6 @@ export default defineComponent({
           <img :src="game.image" :alt="game.name" />
         </a>
         <h3>{{ game.name }}</h3>
-        <p>{{ game.description }}</p>
       </div>
     </div>
   </div>

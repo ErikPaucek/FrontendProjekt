@@ -11,22 +11,21 @@ export default {
   data() {
     const articlesStore = useArticlesStore();
     const commentsStore = useCommentsStore();
-
     const articleId = Number(this.$route.params.id);
     const article = articlesStore.getArticleById(articleId);
     const comments = commentsStore.getCommentsByArticle(articleId);
 
     return {
       article,
-      comments,
+      comments: comments as Array<{ author: string; text: string }>,
     };
   },
   methods: {
-    addComment(comment: { author: string; text: string }) {
+    addComment(comment: { author: string; text: string }): void {
       const commentsStore = useCommentsStore();
       const articleId = Number(this.$route.params.id);
       commentsStore.addComment(articleId, comment);
-      this.comments.push(comment);
+      this.comments = commentsStore.getCommentsByArticle(articleId);
     },
   },
 };

@@ -11,7 +11,7 @@ export default {
     };
   },
   methods: {
-    readMore(title) {
+    readMore(title:string) {
       const article = this.articles.find((a) => a.title === title);
       if (article) {
         this.$router.push(`/article/${article.id}`);
